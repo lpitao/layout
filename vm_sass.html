@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"> 
+		<title></title>
+		<script>
+			if (/iP(hone|od|ad)/.test(navigator.userAgent)) { 
+				var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/), version = parseInt(v[1], 10);
+				if(version >= 8){ 
+					document.documentElement.classList.add('hairlines') 
+				} 
+			}	
+		</script>
+		<link rel="stylesheet" href="css/ccc.css" />
+		<style type="text/css">
+			body,html{margin:0;padding:0}
+		 	html{width:100vw;height:100vh}
+		 	body{min-height:100%;background-color:#f4f4f4}
+		 	*,:after,:before{box-sizing:border-box}
+		 	li,ul{list-style:none outside none;margin:0;padding:0}
+		 	figure{display:block;margin:0}
+		 	img{width:100%;height:auto;vertical-align:top}
+		 	
+		 	
+			.hairlines .border {
+			  border-width: 0.5px;
+			}
+		 	.border { 
+		 		border: 1px solid black; 
+		 	} 
+		 	
+		 	.border-image-1px { 
+		 		border-width: 1px 0; 
+		 		border-image: url(image/border2.png) 2 0 stretch;
+
+		 	}
+
+		 
+		</style>
+	</head>
+	<body>
+		<div class="mod_nav border">
+			<div class="list">
+				<div class="item">
+					<div class="logo">
+						<img src="image/kn.jpg">
+					</div>
+					<div class="name border-image-1px">789</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

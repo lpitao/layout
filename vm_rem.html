@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"> 
+		<title></title>
+		<style type="text/css">
+			body,html{margin:0;padding:0}
+		 	html{width:100vw;height:100vh}
+		 	body{min-height:100%;background-color:#f4f4f4}
+		 	*,:after,:before{box-sizing:border-box}
+		 	li,ul{list-style:none outside none;margin:0;padding:0}
+		 	figure{display:block;margin:0}
+		 	img{/*width:100%;*/height:auto;vertical-align:top}
+		 	
+			@media screen and (min-width: 375px) {
+			    html {
+			        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+			        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+			        font-size: calc(16px + 2 * (100vw - 375px) / 39);
+			    }
+			}
+			@media screen and (min-width: 414px) {
+			    html {
+			        /* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+			        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+			        font-size: calc(18px + 4 * (100vw - 414px) / 586);
+			    }
+			}
+			@media screen and (min-width: 600px) {
+			    html {
+			        /* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+			        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+			        font-size: calc(20px + 4 * (100vw - 600px) / 400);
+			    }
+			}
+			@media screen and (min-width: 1000px) {
+			    html {
+			        /* 1000px往后是每100像素0.5px增加 */
+			        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+			        font-size: calc(22px + 6 * (100vw - 1000px) / 1000);
+			    }
+			}
+		/*html {
+  font-size: 20vw; }
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 64px; } }
+  @media screen and (min-width: 540px) {
+    html {
+      font-size: 108px; } }
+
+body {
+  max-width: 540px;
+  min-width: 320px; }*/
+
+.mod_nav {
+  background: #FFFFFF; }
+  .mod_nav .list {
+    display: flex;
+    padding: 0.042rem 2.6666666667rem 2.6666666667rem; }
+    .mod_nav .list .item {
+      flex: 1;
+     /* text-align: center;*/
+      font-size: 2.6666666667rem; }
+      .mod_nav .list .item .logo {
+        display: block;
+        margin: 0 auto;
+        /*width: 10.6666666667rem;
+        height: 10.6666666667rem;*/ }
+        .mod_nav .list .item .logo img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%; }
+      .mod_nav .list .item .name {
+        /*margin-top: 0.5333333333rem;*/ }
+		</style>
+	</head>
+	<body>
+		<div class="mod_nav">
+			<div class="list">
+				<div class="item">
+					<div class="logo">
+						<img src="image/kn.jpg">
+					</div>
+					<div class="name">789</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item">
+					<div class="logo">
+						<img src="image/kn.jpg">
+					</div>
+					<div class="name">789</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

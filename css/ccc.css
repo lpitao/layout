@@ -1,0 +1,35 @@
+html {
+  font-size: 20vw; }
+  @media screen and (max-width: 320px) {
+    html {
+      font-size: 64px; } }
+  @media screen and (min-width: 540px) {
+    html {
+      font-size: 108px; } }
+
+body {
+  max-width: 540px;
+  min-width: 320px; }
+
+.mod_nav {
+  background: #FFFFFF; }
+  .mod_nav .list {
+    display: flex;
+    padding: 4vw 2.6666666667vw 2.6666666667vw; }
+    .mod_nav .list .item {
+      flex: 1;
+      text-align: center;
+      font-size: 2.6666666667vw; }
+      .mod_nav .list .item .logo {
+        display: block;
+        margin: 0 auto;
+        width: 10.6666666667vw;
+        height: 10.6666666667vw; }
+        .mod_nav .list .item .logo img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%; }
+      .mod_nav .list .item .name {
+        margin-top: 0.5333333333vw; }
+
+/*# sourceMappingURL=ccc.css.map */
