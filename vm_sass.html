@@ -13,42 +13,30 @@
 			}	
 		</script>
 		<link rel="stylesheet" href="css/ccc.css" />
-		<style type="text/css">
-			body,html{margin:0;padding:0}
-		 	html{width:100vw;height:100vh}
-		 	body{min-height:100%;background-color:#f4f4f4}
-		 	*,:after,:before{box-sizing:border-box}
-		 	li,ul{list-style:none outside none;margin:0;padding:0}
-		 	figure{display:block;margin:0}
-		 	img{width:100%;height:auto;vertical-align:top}
-		 	
-		 	
-			.hairlines .border {
-			  border-width: 0.5px;
-			}
-		 	.border { 
-		 		border: 1px solid black; 
-		 	} 
-		 	
-		 	.border-image-1px { 
-		 		border-width: 1px 0; 
-		 		border-image: url(image/border2.png) 2 0 stretch;
-
-		 	}
-
-		 
-		</style>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		 <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
 	</head>
 	<body>
-		<div class="mod_nav border">
-			<div class="list">
-				<div class="item">
-					<div class="logo">
-						<img src="image/kn.jpg">
-					</div>
-					<div class="name border-image-1px">789</div>
-				</div>
+		<div class="searchSS">
+			<div class="searchInput">
+				<i class="iconfont icon-sousuo"></i>
+				<input type="text" placeholder="请输入关键词"/>
+				<i class="iconfont icon-quxiao"></i>
 			</div>
+			<span class="del">取消</span>
 		</div>
+		<div class="alert"></div>
+		<script type="text/javascript">
+			$('.searchInput').on('click',function(){
+				$('.searchInput').addClass('searchInputAnim')
+				$('.del').addClass('delAnim');
+				$('.alert').show()
+			})
+			$('.del').on('click',function(){
+				$('.searchInput').removeClass('searchInputAnim')
+				$('.del').removeClass('delAnim')
+				$('.alert').hide();
+			})
+		</script>
 	</body>
 </html>
