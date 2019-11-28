@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"> -->
+		<meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no, viewport-fit=cover'>
+		<title></title>
+		<style type="text/css">
+			body,html{margin:0;padding:0}
+		 	html{width:100vw;height:100vh}
+		 	body{min-height:100%;background-color:#f4f4f4}
+		 	*,:after,:before{box-sizing:border-box}
+		 	li,ul{list-style:none outside none;margin:0;padding:0}
+		 	figure{display:block;margin:0}
+		 	img{/*width:100%;*/height:auto;vertical-align:top}
+		 	
+body {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 16pt;
+    -webkit-text-size-adjust: 100%;
+    background-color: #eef;
+}
+*{
+    box-sizing: border-box;
+}
+/*地址栏在视窗,有全屏高度的元素问题*/
+.my-element{
+	height: 100vh;
+	height: calc(var(--vh, 1vh) *100);
+}
+.my-element li{
+	height: 20%;
+	background: #fff;
+	color: #F73859;
+	text-align: center;
+	line-height: calc(var(--vh, 1vh) *20);
+}
+.my-element li:nth-child(2n){
+	background: #F73859;
+	color: #F1D08A;
+}
+
+		</style>
+	</head>
+	<body>
+		<ul class="my-element">
+			<li>20%</li>
+			<li>40%</li>
+			<li>60%</li>
+			<li>80%</li>
+			<li>100%</li>
+		</ul>
+		<script type="text/javascript">
+			window.addEventListener('resize', () => { 
+				let vh = window.innerHeight * 0.01; 
+				document.documentElement.style.setProperty('--vh', `${vh}px`); 
+			});
+
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh',`${vh}px`)
+		</script>
+	</body>
+</html>
